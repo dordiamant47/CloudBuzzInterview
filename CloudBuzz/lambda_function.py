@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     # Check if endpoint is valid
     if event["rawPath"] == RAW_PATH:
         
-        # Extract numbers from POST event and calculate sum
+        # Extract numbers from event and calculate sum
         num1 = int(event["queryStringParameters"]["num1"])
         num2 = int(event["queryStringParameters"]["num2"])
         sum = num1 + num2
